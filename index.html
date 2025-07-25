@@ -6,22 +6,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles/flower.css" />
-    <link rel="icon" href="assets/logo.png" type="image/x-icon" />
     <title>Petal Bloom</title>
   </head>
   <body class="bg-[#f7f9fe]">
+
+
+    <!-- header -->
     <header class="mt-8 max-w-6xl mx-auto">
+
+        <!-- navbar -->
       <nav class="px-4 flex justify-between items-center">
         <div class="logo-section">
           <img class="w-16 lg:w-32" src="./assets/logo.png" alt="Petal Bloom Logo" />
         </div>
         <ul class="nav-list flex items-center gap-12">
-          <li><a href="#" class="font-bold text-[#24222f] hidden lg:block">Home</a></li>
-          <li><a href="#" class="font-normal text-[#8a879e] hidden lg:block">Store</a></li>
-          <li><a href="#" class="font-normal text-[#8a879e] hidden lg:block">Our Story</a></li>
-          <li class="flex items-center gap-2">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <p class="text-sm">Cart ($56)</p>
+          <li><a href="#" class="font-bold text-[#24222f] hover:text-black hover:scale-[1.02] transition duration-200 hidden lg:block">Home</a></li>
+          <li><a href="#" class="font-normal text-[#8a879e] hover:text-black hover:scale-[1.02] transition duration-200 hidden lg:block">Store</a></li>
+          <li><a href="#" class="font-normal text-[#8a879e] hover:text-black hover:scale-[1.02] transition duration-200 hidden lg:block">Our Story</a></li>
+          <li class="flex items-center gap-2 hover:text-black hover:scale-[1.02] transition duration-200">
+            <!-- cart icon -->
+            <p class="text-sm" >Cart ($56)</p>
           </li>
         </ul>
       </nav>
@@ -34,8 +38,7 @@
           <h1 class="text-3xl lg:text-6xl font-serif font-bold">
             ALWAYS <span class="text-orange-500">FRESH<br>FLOWERS</span>
           </h1>
-          <p class="text-base text-gray-500 mt-3">
-            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+          <p class="text-[22px] text-gray-500 mt-3"> Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
           </p>
         </div>
         <img class="intro-image lg:w-1/2" src="assets/hero-flower.png" alt="Fresh Blossoms" />
@@ -47,61 +50,62 @@
     <main class="flex flex-col items-center gap-20 mt-20 lg:gap-36 lg:mt-36">
       <!-- Bouquet sets -->
       <section class="max-w-6xl mx-auto text-center flex flex-col items-center px-4">
-        <h2 class="text-3xl lg:text-5xl font-serif font-bold text-orange-500">Our Plants</h2>
+        <h2 class="text-3xl lg:text-5xl font-serif font-bold text-orange-500">Our <span class="text-black">Plants</span></h2>
+
         <p class="text-gray-500 mt-4 w-4/5 lg:w-3/5">
           Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
         </p>
         <div class="grid grid-cols-2 gap-7 mt-8 lg:grid-cols-4">
 
           <!-- Repeat flower -->
+          
           <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
-            <img src="assets/sample-flower-image.png" alt="Golden Blooms" class="w-full h-48 lg:h-72 mb-4" />
-            <h3 class="font-medium text-base">Golden Blooms</h3>
+            <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-48 lg:h-72 mb-4" />
+            <h3 class="font-medium text-base">Lily Blossom</h3>
             <strong class="block font-bold text-base">20 USD</strong>
-            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-orange-600 transition">Add to Basket</button>
+            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-yellow-500 transition">Add to Cart</button>
           </div>
-        
+          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
+            <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-48 lg:h-72 mb-4" />
+            <h3 class="font-medium text-base">Lily Blossom</h3>
+            <strong class="block font-bold text-base">20 USD</strong>
+            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-yellow-500 transition">Add to Cart</button>
+          </div>
+          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
+            <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-48 lg:h-72 mb-4" />
+            <h3 class="font-medium text-base">Lily Blossom</h3>
+            <strong class="block font-bold text-base">20 USD</strong>
+            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-yellow-500 transition">Add to Cart</button>
+          </div>
+          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
+            <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-48 lg:h-72 mb-4" />
+            <h3 class="font-medium text-base">Lily Blossom</h3>
+            <strong class="block font-bold text-base">20 USD</strong>
+            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-yellow-500 transition">Add to Cart</button>
+          </div>
            <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
-            <img src="assets/sample-flower-image.png" alt="Golden Blooms" class="w-full h-48 lg:h-72 mb-4" />
-            <h3 class="font-medium text-base">Golden Blooms</h3>
+            <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-48 lg:h-72 mb-4" />
+            <h3 class="font-medium text-base">Lily Blossom</h3>
             <strong class="block font-bold text-base">20 USD</strong>
-            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-orange-600 transition">Add to Basket</button>
+            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-yellow-500 transition">Add to Cart</button>
           </div>
-          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
-            <img src="assets/sample-flower-image.png" alt="Golden Blooms" class="w-full h-48 lg:h-72 mb-4" />
-            <h3 class="font-medium text-base">Golden Blooms</h3>
+           <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
+            <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-48 lg:h-72 mb-4" />
+            <h3 class="font-medium text-base">Lily Blossom</h3>
             <strong class="block font-bold text-base">20 USD</strong>
-            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-orange-600 transition">Add to Basket</button>
+            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-yellow-500 transition">Add to Cart</button>
           </div>
-          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
-            <img src="assets/sample-flower-image.png" alt="Golden Blooms" class="w-full h-48 lg:h-72 mb-4" />
-            <h3 class="font-medium text-base">Golden Blooms</h3>
+           <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
+            <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-48 lg:h-72 mb-4" />
+            <h3 class="font-medium text-base">Lily Blossom</h3>
             <strong class="block font-bold text-base">20 USD</strong>
-            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-orange-600 transition">Add to Basket</button>
+            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-yellow-500 transition">Add to Cart</button>
           </div>
-          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
-            <img src="assets/sample-flower-image.png" alt="Golden Blooms" class="w-full h-48 lg:h-72 mb-4" />
-            <h3 class="font-medium text-base">Golden Blooms</h3>
+           <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
+            <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-48 lg:h-72 mb-4" />
+            <h3 class="font-medium text-base">Lily Blossom</h3>
             <strong class="block font-bold text-base">20 USD</strong>
-            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-orange-600 transition">Add to Basket</button>
-          </div>
-          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
-            <img src="assets/sample-flower-image.png" alt="Golden Blooms" class="w-full h-48 lg:h-72 mb-4" />
-            <h3 class="font-medium text-base">Golden Blooms</h3>
-            <strong class="block font-bold text-base">20 USD</strong>
-            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-orange-600 transition">Add to Basket</button>
-          </div>
-          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
-            <img src="assets/sample-flower-image.png" alt="Golden Blooms" class="w-full h-48 lg:h-72 mb-4" />
-            <h3 class="font-medium text-base">Golden Blooms</h3>
-            <strong class="block font-bold text-base">20 USD</strong>
-            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-orange-600 transition">Add to Basket</button>
-          </div>
-          <div class="flower-card border border-orange-500 w-40 lg:w-64 hover:scale-105 transition-transform">
-            <img src="assets/sample-flower-image.png" alt="Golden Blooms" class="w-full h-48 lg:h-72 mb-4" />
-            <h3 class="font-medium text-base">Golden Blooms</h3>
-            <strong class="block font-bold text-base">20 USD</strong>
-            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-orange-600 transition">Add to Basket</button>
+            <button class="w-full bg-orange-500 text-white font-semibold py-3 mt-5 hover:bg-yellow-500 transition">Add to Cart</button>
           </div>
          
         </div>
@@ -124,7 +128,7 @@
         </div>
       </section>
 
-       <!-- Promotions -->
+       <!-- Promotions deals -->
       <section class="max-w-6xl mx-4 flex flex-col items-center mt-7">
         <div class="text-center mb-6">
           <h2 class="text-3xl lg:text-5xl font-serif font-bold">
@@ -133,21 +137,27 @@
          <p class="text-center mb-6 text-gray-500 mt-4 w-4/5 lg:w-3/5">
   Indulge your senses in the beauty and fragrance of our fresh flower collection. From timeless roses to rare exotic blooms, we offer a vibrant variety for every occasion.
 </p>
+</div>
 
-        </div>
+
         <div class="grid grid-cols-1 gap-6 w-full lg:grid-cols-3">
           <div class="rounded-2xl flex flex-col justify-center items-center bg-[url('assets/deal-bloom.png')] bg-center bg-cover h-44 lg:h-48 text-white text-center">
             <p class="font-bold text-lg">60% Off | Bloom Plant</p>
             <a href="#" class="underline text-sm mt-1">Shop Now</a>
           </div>
+
           <div class="rounded-2xl flex flex-col justify-center items-center bg-[url('assets/deal-zabo.png')] bg-center bg-cover h-44 lg:h-auto lg:col-span-2 lg:row-span-2 text-white text-center">
-            <p class="font-bold text-lg">30% Off | Ana Plant</p>
-            <a href="#" class="underline text-sm mt-1">Shop Now</a>
+            <!-- <p class="font-bold text-lg">25% Off | Zabo Plants </p> -->
+             <p class="font-bold text-[40px]">25% Off | Zabo Plants</p>
+             <a href="#" class="underline text-[28px] font-semibold mt-1">Shop Now</a>
+            <!-- <a href="#" class="underline text-sm mt-1">Shop Now</a> -->
           </div>
+
           <div class="rounded-2xl flex flex-col justify-center items-center bg-[url('assets/deal-ana.png')] bg-center bg-cover h-44 lg:h-48 text-white text-center">
-            <p class="font-bold text-lg">25% Off | Zabo Plants</p>
+            <p class="font-bold text-lg">25% Off | Ana Plant</p>
             <a href="#" class="underline text-sm mt-1">Shop Now</a>
           </div>
+
         </div>
       </section>
 
@@ -159,7 +169,7 @@
          
           <input type="email" placeholder="Your email address" class="flex-1 py-2 px-4 bg-white focus:outline-none"/>
 
-          <input type="submit" value="Subscribe" class="bg-orange-500 text-white px-5 py-2 cursor-pointer hover:bg-orange-600 transition" />
+          <input type="submit" value="Subscribe" class="bg-orange-500 text-white px-5 py-2 cursor-pointer hover:bg-yellow-500 transition" />
         </form>
       </section>
     </main>
@@ -167,28 +177,28 @@
     <!-- foot -->
     <footer class="max-w-6xl mx-auto grid grid-cols-1 gap-8 p-6 mt-12 lg:grid-cols-4">
       <div>
-        <img src="./assets/logo.png" alt="Petal Bloom Logo" class="w-1/2" />
-        <p class="mt-4 text-gray-500 text-sm">Fresh designs, hand-wrapped and delivered with care from our floral home to yours.</p>
+        <img src="assets/logo.png" alt="Petal Bloom Logo" class="w-1/2" />
+        <p class="mt-4 text-gray-500 text-sm">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
       </div>
       <ul class="flex flex-col gap-3 text-sm text-gray-500">
-        <li><a href="#" class="hover:text-orange-500">Home</a></li>
-        <li><a href="#" class="hover:text-orange-500">Our Story</a></li>
-        <li><a href="#" class="hover:text-orange-500">Articles</a></li>
-        <li><a href="#" class="hover:text-orange-500">Support</a></li>
-        <li><a href="#" class="hover:text-orange-500">Contact</a></li>
+        <li><a href="#" class="hover:text-black hover:font-bold transition-colors duration-200">Home</a></li>
+        <li><a href="#" class="hover:text-black hover:font-bold transition-colors duration-200">About Us</a></li>
+        <li><a href="#"class="hover:text-black hover:font-bold transition-colors duration-200">Blog</a></li>
+        <li><a href="#" class="hover:text-black hover:font-bold transition-colors duration-200">FAQ</a></li>
+        <li><a href="#"class="hover:text-black hover:font-bold transition-colors duration-200">Contact Us</a></li>
       </ul>
       <ul class="flex flex-col gap-3 text-sm text-gray-500">
-        <li><a href="#" class="hover:text-orange-500">Features</a></li>
-        <li><a href="#" class="hover:text-orange-500">Pricing</a></li>
-        <li><a href="#" class="hover:text-orange-500">Policy</a></li>
-        <li><a href="#" class="hover:text-orange-500">Terms</a></li>
-        <li><a href="#" class="hover:text-orange-500">Help</a></li>
+        <li><a href="#" class="hover:text-black hover:font-bold transition-colors duration-200">Features</a></li>
+        <li><a href="#"class="hover:text-black hover:font-bold transition-colors duration-200">Pricing</a></li>
+        <li><a href="#" class="hover:text-black hover:font-bold transition-colors duration-200">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-black hover:font-bold transition-colors duration-200">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-black hover:font-bold transition-colors duration-200">Help Centre</a></li>
       </ul>
       <div class="flex gap-6">
-        <a href=""><img src="assets/icon-linkedin.png" alt="LinkedIn" class="w-9" /></a>
-        <a href=""><img src="assets/icon-twitter.png" alt="X" class="w-9" /></a>
-        <a href=""><img src="assets/icon-facebook.png" alt="Facebook" class="w-9" /></a>
-        <a href=""><img src="assets/icon-youtube.png" alt="YouTube" class="w-9" /></a>
+        <a href=""><img src="assets/icon-linkedin.png" alt="LinkedIn"  class="w-9 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:opacity-80" /></a>
+        <a href=""><img src="assets/icon-twitter.png" alt="X-elon musk"   class="w-9 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:opacity-80" /></a>
+        <a href=""><img src="assets/icon-facebook.png" alt="Facebook"   class="w-9 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:opacity-80" /></a>
+        <a href=""><img src="assets/icon-youtube.png" alt="YouTube"   class="w-9 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:opacity-80" /></a>
       </div>
     </footer>
   </body>
